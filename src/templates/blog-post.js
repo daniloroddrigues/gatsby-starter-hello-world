@@ -1,12 +1,24 @@
 import React from "react"
-import Header from "../components/header"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
-export default function BlogPost() {
+export default function BlogPost({ data }) {
+  const post = data.markdownRemark
   return (
     <Layout>
-      <Header headerText="Blog post single" />
-      <p>A single post for us</p>
+      <h1>{post.frontmatter.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: post.html }} />
     </Layout>
   )
 }
+
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+      }
+    }
+  }
+`
