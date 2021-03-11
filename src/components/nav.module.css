@@ -1,0 +1,19 @@
+.navgation {
+  width: 100%;
+}
+
+.navgation ul,
+.navgation li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navgation a {
+  padding: 8px 10px;
+  color: coral;
+}
+
+.navgation a:hover {
+  color: brown;
+}
