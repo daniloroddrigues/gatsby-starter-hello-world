@@ -1,12 +1,29 @@
 .navgation {
   width: 100%;
+  padding: 1rem;
 }
 
-.navgation ul,
-.navgation li {
+.navgation ul {
   margin: 0;
   padding: 0;
+  list-style: none;
+  float: right;
+}
+
+.navgation header h3 {
+  display: inline-block;
+}
+
+.navgation header a {
+  text-shadow: none;
+  background-image: none;
+}
+
+.navgation li {
+  margin: 0 1rem 0 0;
+  padding: 0;
   list-style-type: none;
+  display: inline-block;
 }
 
 .navgation a {
