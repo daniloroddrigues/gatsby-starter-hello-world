@@ -36,6 +36,7 @@ export default function Layout({ children }) {
             <LinkList to="/pandas/">Pandas</LinkList>
             <LinkList to="/my-files/">My Files</LinkList>
             <LinkList to="/about-css-modules/">CSS Modules</LinkList>
+            <LinkList to="/mark/">Markdown Remark</LinkList>
             <LinkList to="/contact/">Contact</LinkList>
           </ul>
         </header>
